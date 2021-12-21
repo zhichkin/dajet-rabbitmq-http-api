@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>DaJet.RabbitMQ.HttpApi</AssemblyName>
+    <RootNamespace>DaJet.RabbitMQ.HttpApi</RootNamespace>
+    <Authors>Zhichkin</Authors>
+    <Product>DaJet RabbitMQ management HTTP API</Product>
+    <Description>C# implementation of the RabbitMQ management HTTP API</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Zhichkin © 2021</Copyright>
+    <PackageReleaseNotes>HTTP API library to manage RabbitMQ:
+1. Virtual hosts
+2. Exchanges (topic)
+3. Queues (classic, durable)
+4. Bindings (exchange to exchange, exchange to queue)</PackageReleaseNotes>
+    <PackageProjectUrl>https://rawcdn.githack.com/rabbitmq/rabbitmq-server/v3.8.19/deps/rabbitmq_management/priv/www/api/index.html</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

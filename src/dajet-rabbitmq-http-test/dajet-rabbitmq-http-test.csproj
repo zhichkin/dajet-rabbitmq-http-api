@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>DaJet.RabbitMQ.HttpApi.Test</RootNamespace>
+
+    <IsPackable>false</IsPackable>
+
+    <AssemblyName>DaJet.RabbitMQ.HttpApi.Test</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\dajet-rabbitmq-http-api\dajet-rabbitmq-http-api.csproj" />
+  </ItemGroup>
+
+</Project>

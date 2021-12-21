@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dajet-rabbitmq-http-api", "dajet-rabbitmq-http-api\dajet-rabbitmq-http-api.csproj", "{43CD3602-7618-4397-B00A-D0F180996307}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dajet-rabbitmq-http-test", "dajet-rabbitmq-http-test\dajet-rabbitmq-http-test.csproj", "{66F2C090-FBFD-4971-B00C-AC3F909F08BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43CD3602-7618-4397-B00A-D0F180996307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43CD3602-7618-4397-B00A-D0F180996307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43CD3602-7618-4397-B00A-D0F180996307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43CD3602-7618-4397-B00A-D0F180996307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F2C090-FBFD-4971-B00C-AC3F909F08BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F2C090-FBFD-4971-B00C-AC3F909F08BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F2C090-FBFD-4971-B00C-AC3F909F08BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F2C090-FBFD-4971-B00C-AC3F909F08BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84ED6F81-23F0-42E3-A3DD-AC79087B2D09}
+	EndGlobalSection
+EndGlobal
