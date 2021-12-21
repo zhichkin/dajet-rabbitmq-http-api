@@ -15,6 +15,7 @@
 3. Queues (classic, durable)
 4. Bindings (exchange to exchange, exchange to queue)</PackageReleaseNotes>
     <PackageProjectUrl>https://rawcdn.githack.com/rabbitmq/rabbitmq-server/v3.8.19/deps/rabbitmq_management/priv/www/api/index.html</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zhichkin/dajet-rabbitmq-http-api</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
