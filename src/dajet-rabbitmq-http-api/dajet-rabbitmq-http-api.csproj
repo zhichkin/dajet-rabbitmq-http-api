@@ -9,13 +9,10 @@
     <Description>C# implementation of the RabbitMQ management HTTP API</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Zhichkin © 2021</Copyright>
-    <PackageReleaseNotes>HTTP API library to manage RabbitMQ:
-1. Virtual hosts
-2. Exchanges (topic)
-3. Queues (classic, durable)
-4. Bindings (exchange to exchange, exchange to queue)</PackageReleaseNotes>
+    <PackageReleaseNotes>Added GetBindings method to get all bindings for a given virtual host</PackageReleaseNotes>
     <PackageProjectUrl>https://rawcdn.githack.com/rabbitmq/rabbitmq-server/v3.8.19/deps/rabbitmq_management/priv/www/api/index.html</PackageProjectUrl>
     <RepositoryUrl>https://github.com/zhichkin/dajet-rabbitmq-http-api</RepositoryUrl>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

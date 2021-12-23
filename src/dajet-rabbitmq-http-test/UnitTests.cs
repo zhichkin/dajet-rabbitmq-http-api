@@ -64,6 +64,21 @@ namespace DaJet.RabbitMQ.HttpApi.Test
                 Assert.IsTrue(error.Message.Contains("Not found"));
             }
         }
+        [TestMethod] public async Task VirtualHost_GetBindings()
+        {
+            // The default exchange is implicitly bound to every queue, with a routing key equal to the queue name.
+            // It is not possible to explicitly bind to, or unbind from the default exchange.
+            // It also cannot be deleted.
+
+          List<BindingInfo> list = await manager.GetBindings();
+
+            foreach (BindingInfo info in list)
+            {
+                Console.WriteLine((string.IsNullOrEmpty(info.Source) ? "(AMQP default)" : info.Source)
+                    + " > [" + info.RoutingKey + "] > "
+                    + info.Destination + " (" + info.DestinationType + ")");
+            }
+        }
 
         [TestMethod] public async Task Exchange_Create()
         {

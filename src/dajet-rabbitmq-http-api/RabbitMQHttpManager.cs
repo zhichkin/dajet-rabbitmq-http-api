@@ -64,6 +64,7 @@ namespace DaJet.RabbitMQ.HttpApi
 
         #region "BINDING"
 
+        Task<List<BindingInfo>> GetBindings();
         Task<List<BindingInfo>> GetBindings(QueueInfo queue);
         Task<List<BindingInfo>> GetBindings(ExchangeInfo exchange);
         Task CreateBinding(ExchangeInfo exchange, QueueInfo queue, string routingKey);
@@ -310,6 +311,14 @@ namespace DaJet.RabbitMQ.HttpApi
 
         #region "BINDING"
 
+        public async Task<List<BindingInfo>> GetBindings()
+        {
+            string url = $"/api/bindings/{HttpUtility.UrlEncode(VirtualHost)}";
+            HttpResponseMessage response = await HttpClient.GetAsync(url);
+            Stream stream = await response.Content.ReadAsStreamAsync();
+            List<BindingInfo> list = await JsonSerializer.DeserializeAsync<List<BindingInfo>>(stream);
+            return list;
+        }
         public async Task<List<BindingInfo>> GetBindings(QueueInfo queue)
         {
             string url = $"/api/queues/{HttpUtility.UrlEncode(VirtualHost)}/{queue.Name}/bindings";
