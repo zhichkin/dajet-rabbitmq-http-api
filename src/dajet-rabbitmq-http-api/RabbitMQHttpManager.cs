@@ -14,7 +14,7 @@ using System.Web;
 
 namespace DaJet.RabbitMQ.HttpApi
 {
-    public interface IRabbitMQHttpManager
+    public interface IRabbitMQHttpManager : IDisposable
     {
         #region "Configure HTTP connection"
 
@@ -77,6 +77,7 @@ namespace DaJet.RabbitMQ.HttpApi
     {
         private HttpClient HttpClient { get; set; } = new HttpClient();
         public RabbitMQHttpManager() { ConfigureHttpClient(); }
+        public void Dispose() { HttpClient?.Dispose(); }
 
         #region "CONFIGURATION HttpClient"
 
